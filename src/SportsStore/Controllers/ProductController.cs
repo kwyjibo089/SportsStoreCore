@@ -9,13 +9,11 @@ namespace SportsStore.Controllers
     public class ProductController : Controller
     {
         private IProductRepository repository;
-        private readonly IConfiguration configuration;
         private int PageSize;
 
         public ProductController(IProductRepository repo, IConfiguration config)
         {
             repository = repo;
-            configuration = config;
             if (!int.TryParse(config["Data:PageSize"], out PageSize))
                 throw new System.Exception("No config value for PageSize found!");
         }
