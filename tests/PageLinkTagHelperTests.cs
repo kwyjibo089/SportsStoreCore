@@ -8,7 +8,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace SportsStore.Test
+namespace SportsStore.Tests
 {
     public class PageLinkTagHelperTests
     {

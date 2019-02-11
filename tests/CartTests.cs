@@ -2,7 +2,7 @@
 using System.Linq;
 using Xunit;
 
-namespace SportsStore.Test
+namespace SportsStore.Tests
 {
     public class CartTests
     {
