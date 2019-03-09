@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  sportsstore:
+    image: ${DOCKER_REGISTRY-}sportsstore
+    build:
+      context: .
+      dockerfile: src/SportsStore/Dockerfile
